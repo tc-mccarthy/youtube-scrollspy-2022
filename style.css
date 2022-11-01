@@ -111,7 +111,7 @@ figcaption {
   margin: 0 auto;
 }
 
-.sticky .video-inner {
+.can-stick.sticky .video-inner {
   position: fixed;
   max-width: 360px;
   bottom: 0;

@@ -34,15 +34,20 @@
     <div class="video-frame">
         <div class="video-inner">
             <div class="video-player">
-            <iframe
-                src="https://www.youtube.com/embed/eDLo4RGbuoA"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-            ></iframe>
+              <div class="yt-player" data-video-id="eDLo4RGbuoA"></div>
             </div> <!-- close video player -->
         </div> <!-- close video inner -->
     </div> <!-- close video frame -->
+      <div class="container">
+        <h3>Chapters</h3>
+        <ul class="chapters">
+          <li data-timecode="00:00:00"><a href="#">Chapter 1</a></li>
+          <li data-timecode="00:12:00"><a href="#">Chapter 2</a></li>
+          <li data-timecode="00:24:00"><a href="#">Chapter 3</a></li>
+          <li data-timecode="00:36:00"><a href="#">Chapter 4</a></li>
+          <li data-timecode="00:48:00"><a href="#">Chapter 5</a></li>
+        </ul>
+      </div>
 
       <div class="container">
         <p>
@@ -162,6 +167,7 @@
     </div>
 
     <!-- Your javascript should be called here -->
+    <script src="https://www.youtube.com/iframe_api" async></script>
     <script src="https://watchjs.tcm.io/js/watch.min.js"></script>
     <script src="main.js"></script>
   </body>
